@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amr Mohamed Ayman — Web & App Developer</title>
+  <meta name="description" content="Amr Mohamed Ayman builds responsive websites, web applications and mobile app experiences. Get in touch to discuss your project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============ STICKY SIDEBAR (appears after hero) ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-card">
+      <div class="side-top">
+        <a href="#home" class="logo-chip">AMR<span>.</span></a>
+        <div class="socials">
+          <a href="mailto:amr.mohamed.ayman@gmail.com" aria-label="Email Amr">@</a>
+          <a href="https://wa.me/201022097233" target="_blank" rel="noopener" aria-label="WhatsApp Amr">WA</a>
+        </div>
+      </div>
+      <p class="side-text">Websites and applications built around your business and your users.</p>
+    </div>
+    <div class="side-card side-stats">
+      <div><strong>Web</strong><span>Development</span></div>
+      <div><strong>App</strong><span>Development</span></div>
+    </div>
+    <nav class="side-card side-nav">
+      <a href="#home" data-section="home"><i>⌂</i>Home</a>
+      <a href="#about" data-section="about"><i>◐</i>About me</a>
+      <a href="#work" data-section="work"><i>▣</i>Projects</a>
+      <a href="#get" data-section="get"><i>◆</i>What you get</a>
+      <a href="#services" data-section="services"><i>✦</i>Services</a>
+      <a href="#clients" data-section="clients"><i>●</i>Process</a>
+      <a href="#faq" data-section="faq"><i>?</i>FAQ</a>
+    </nav>
+    <div class="side-marquee">
+      <div class="marquee-track">
+        <span>WEB DEVELOPMENT</span><span>APP DEVELOPMENT</span><span>RESPONSIVE DESIGN</span><span>API INTEGRATIONS</span>
+        <span>WEB DEVELOPMENT</span><span>APP DEVELOPMENT</span><span>RESPONSIVE DESIGN</span><span>API INTEGRATIONS</span>
+      </div>
+    </div>
+    <button class="side-email" data-copy="amr.mohamed.ayman@gmail.com">amr.mohamed.ayman@gmail.com <span>⧉</span></button>
+    <a href="#contact" class="btn btn-aqua btn-block">Discuss a Project</a>
+  </aside>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <h1 class="hero-name">AMR</h1>
+      <img class="hero-photo" src="images/amr-hero.png" alt="Portrait of Amr Mohamed Ayman" fetchpriority="high"
+        onerror="this.classList.add('ph')" />
+      <nav class="hero-nav">
+        <div><a href="#home">Home</a><a href="#about">About me</a><a href="#work">Projects</a></div>
+        <div><a href="#get">What you get</a><a href="#services">Services</a><a href="#clients">Process</a><a
+            href="#faq">FAQ</a></div>
+      </nav>
+
+      <div class="hero-bottom">
+        <p class="hero-intro">Web &amp; App Developer.<br />That's Amr Mohamed Ayman.</p>
+
+        <div class="hero-center">
+          <div class="badges">
+            <div class="badge glass"><b class="badge-ico">&lt;/&gt;</b><span>Web<br />Development</span></div>
+            <div class="badge glass stacked"><b>↗</b><span>App<br />Development</span></div>
+          </div>
+          <div>
+            <h2 class="hero-title">Web &amp; Apps,<br />Built<br />Thoughtfully.</h2>
+          </div>
+        </div>
+
+        <p class="hero-desc">Building websites and applications that bring together clear design, practical features and solid engineering.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / JOURNEY ============ -->
+    <section class="about content" id="about">
+      <span class="tag">Start small, grow big</span>
+      <h2 class="h-section">About Me <span class="muted">(&amp;)</span><br />My Approach</h2>
+      <p class="lead">I’m Amr Mohamed Ayman, a web and app developer. Here’s how I turn an idea into a useful digital product. Click a card to explore.</p>
+
+      <div class="timeline">
+        <svg class="timeline-line" aria-hidden="true">
+          <path class="tl-base" />
+          <path class="tl-progress" />
+          <circle class="tl-dot" r="7" />
+        </svg>
+        <!-- Cards are generated from JOURNEY in script.js -->
+        <div id="journey"></div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="work content dark" id="work">
+      <div class="work-head">
+        <div>
+          <span class="tag tag-dark">Selected work</span>
+          <h2 class="h-section">Crafted Carefully,<br />Made to Perform</h2>
+        </div>
+        <p>Over the years I've helped businesses across many industries turn ideas into websites that look and work
+          exactly as they imagined. Here's some of that work.</p>
+      </div>
+      <div class="work-grid" id="workGrid"><!-- generated from PROJECTS in script.js --></div>
+    </section>
+
+    <!-- ============ WHAT YOU GET ============ -->
+    <section class="get content" id="get">
+      <span class="tag center">Capabilities overview</span>
+      <p class="statement">
+        Strategy, <span class="pill-ico">✦</span> precision and development
+        combined <span class="pill-ico">◆</span> — turning your vision into a
+        powerful digital <span class="pill-ico">●</span> experience that feels effortless.
+      </p>
+      <div class="caps">
+        <article class="cap">
+          <h3>Web Development</h3>
+          <p>Fast, scalable sites with clean structure and a content setup you fully control.</p>
+        </article>
+        <article class="cap">
+          <h3>App Development</h3>
+          <p>App interfaces, dashboards and connected workflows that make everyday tasks simpler.</p>
+        </article>
+        <article class="cap">
+          <h3>SEO-Ready Setup</h3>
+          <p>Solid structure, speed and on-page SEO so your site gets found and stays visible.</p>
+        </article>
+        <article class="cap">
+          <h3>Interactive Motion</h3>
+          <p>Smooth, purposeful animations that make the experience feel alive.</p>
+        </article>
+        <article class="cap">
+          <h3>Performance</h3>
+          <p>Lighter, faster, cleaner builds following technical best practices.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services content" id="services">
+      <span class="tag">Services</span>
+      <h2 class="h-section">Solutions<br />That Deliver</h2>
+      <p class="lead">Same quality and attention to detail — just scaled to the size of your project.</p>
+
+      <div class="pricing">
+        <article class="price-card">
+          <header><i>◆</i>Ongoing Support</header>
+          <div class="price">Let’s talk <small>/ monthly support</small></div>
+          <p>A dedicated developer every month for whatever your site needs.</p>
+          <ul>
+            <li>New pages, sections and features</li>
+            <li>Maintenance, fixes and content updates</li>
+            <li>Technical SEO and performance work</li>
+            <li>Scope and schedule agreed together</li>
+          </ul>
+          <footer>For brands that want continuous growth. <a href="mailto:amr.mohamed.ayman@gmail.com?subject=Ongoing%20support">Ask about support ↗</a></footer>
+        </article>
+        <article class="price-card featured">
+          <header><i>✦</i>Website Build</header>
+          <div class="price">Custom quote</div>
+          <p>A responsive website tailored to your content, brand and goals.</p>
+          <ul>
+            <li>Up to 6 pages</li>
+            <li>CMS setup</li>
+            <li>Animations and interactions</li>
+            <li>Technical SEO setup</li>
+            <li>Editor training after launch</li>
+          </ul>
+          <footer>For new sites or quick migrations. <a href="mailto:amr.mohamed.ayman@gmail.com?subject=Website%20project">Request a quote ↗</a></footer>
+        </article>
+        <article class="price-card">
+          <header><i>♛</i>Web &amp; App Project</header>
+          <div class="price"><a href="#contact" class="btn btn-dark">Discuss a Project</a></div>
+          <p>High-end builds for complex projects. Every scope starts with a conversation.</p>
+          <ul>
+            <li>Advanced animation systems</li>
+            <li>Scalable multi-collection CMS</li>
+            <li>Modular components and dynamic content</li>
+            <li>API-driven features</li>
+            <li>Post-launch support included</li>
+          </ul>
+          <footer>For projects that need a tailored approach.</footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta content" id="contact">
+      <h2 class="cta-title">Let's Build<br /><span class="hl">Something</span><br />Great Together</h2>
+      <p class="lead center">Have a website or app in mind? Let’s turn your idea into a clear, useful digital experience.</p>
+      <p class="cta-small">Have something in mind?</p>
+      <div class="contact-actions"><a href="mailto:amr.mohamed.ayman@gmail.com" class="btn btn-aqua btn-big">Email Me</a><a href="https://wa.me/201022097233" target="_blank" rel="noopener" class="btn btn-deep btn-big">WhatsApp</a></div><p class="contact-details"><a href="mailto:amr.mohamed.ayman@gmail.com">amr.mohamed.ayman@gmail.com</a><br /><a href="tel:+201022097233">01022097233</a></p>
+    </section>
+
+    <!-- ============ WORKING PROCESS ============ -->
+    <section class="clients content" id="clients">
+      <div class="clients-head">
+        <div>
+          <span class="tag">How I work</span>
+          <h2 class="h-section">From First Idea<br />To Final Launch</h2>
+        </div>
+        <div class="slider-ctrls">
+          <button class="round" id="prevT" aria-label="Previous">←</button>
+          <button class="round" id="nextT" aria-label="Next">→</button>
+        </div>
+      </div>
+      <div class="testimonials" id="testimonials"><!-- generated from TESTIMONIALS in script.js --></div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq content" id="faq">
+      <span class="tag">FAQ</span>
+      <h2 class="h-section">Questions<br />&amp; Answers</h2>
+      <div class="faq-list" id="faqList"><!-- generated from FAQ in script.js --></div>
+    </section>
+
+    <footer class="site-footer content">
+      <div class="footer-name">AMR</div>
+      <div class="footer-row">
+        <span>© <span id="year"></span> Amr Mohamed Ayman. All rights reserved.</span>
+        <span><a href="tel:+201022097233">Call</a> · <a href="https://wa.me/201022097233" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:amr.mohamed.ayman@gmail.com">Email</a></span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Journey modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="story-title">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <span class="modal-year"></span>
+      <h3 class="modal-title" id="story-title"></h3>
+      <p class="modal-body"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Email copied</div>
+  <script src="script.js"></script>
+  <script src="effects.js"></script>
+</body>
+
+</html>
